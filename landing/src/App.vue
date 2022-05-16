@@ -1,14 +1,14 @@
 <template>
   <div id="body" class="container-fluid">
     <div id="capa" class="d-flex center-center h8 bg-white">
-      <div class="d-flex flex-column align-items-center">
+      <div id="title" class="d-flex flex-column align-items-center">
         <h2>Lorem Ipsum Sit Amet</h2>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad voluptatibus nostrum.</span>
       </div>
     </div>
     <div class="container">
-      <div class="row h6">
-        <div class="col d-flex center-center">
+      <div  class="row h6">
+        <div id="teste" class="col d-flex center-center">
           <h2>Lorem Ipsum</h2>
         </div>
         <div class="col d-flex center-center text-center">
@@ -162,8 +162,17 @@
 </template>
 
 <script>
+// import { gsap } from "gsap";
+
 export default {
 
+  data: function () {
+    return {
+      fromUp: {duration: 2, opacity: 0, y: -100},
+      fromLeft: {duration: 2, opacity: 0, x: -100},
+      fromRight: {duration: 2, opacity: 0, x: 100}
+    }
+  },
 }
 </script>
 
