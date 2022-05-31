@@ -111,7 +111,7 @@
     <div class="d-flex flex-column justify-content-center h8">
       <div id="cell" class="row h6 d-flex flex-md-row flex-column mb-0">
         <div id="cellPic" class="col-md-5 d-flex justify-content-center align-items-end border">
-          <figure class="figure">
+          <figure class="border">
             <img src="./assets/phone-pic.png" class="figure-img img-fluid rounded">
           </figure>
         </div>
