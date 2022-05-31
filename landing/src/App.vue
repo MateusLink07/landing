@@ -1,65 +1,55 @@
 <template>
   <div id="body" class="container-fluid">
-    <div id="capa" class="d-flex center-center h8 bg-white">
+    <div id="cover" class="d-flex center-center" >
+      <img id="cover-sun" src="./assets/illustrations/sun.png">
+      <img id="cover-torii" src="./assets/illustrations/cover-torii.png">
       <div id="title" class="d-flex flex-column align-items-center">
-        <h2>Lorem Ipsum Sit Amet</h2>
+        <h1>Lorem Ipsum Sit Amet</h1>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad voluptatibus nostrum.</span>
       </div>
     </div>
-    <div class="container">
-      <div id="picNexp-1" class="row h6">
-        <div class="col d-flex center-center">
-          <h2>Lorem Ipsum</h2>
-        </div>
-        <div class="col d-flex center-center text-center">
-          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet harum culpa inventore rem blanditiis excepturi autem. Aliquid ducimus, numquam molestias dolores officia nihil incidunt tempore iusto consectetur rem temporibus.</span>
-        </div>
-      </div>
-      <div id="picNexp-2" class="row h6">
-        <div class="col d-flex center-center text-center">
-          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet harum culpa inventore rem blanditiis excepturi autem. Aliquid ducimus, numquam molestias dolores officia nihil incidunt tempore iusto consectetur rem temporibus.</span>
-        </div>
-        <div class="col d-flex center-center">
-          <h2>Lorem Ipsum</h2>
-        </div>
-      </div>
-      <div id="picNexp-3" class="row h6">
-        <div class="col d-flex center-center">
-          <h2>Lorem Ipsum</h2>
-        </div>
-        <div class="col d-flex center-center text-center">
-          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet harum culpa inventore rem blanditiis excepturi autem. Aliquid ducimus, numquam molestias dolores officia nihil incidunt tempore iusto consectetur rem temporibus.</span>
-        </div>
-      </div>
-      <div id="picsNtitles" class="row row-cols-3 h6">
-        <div class="col d-flex flex-column">
-          <div class="col d-flex center-center">
-            <h3>Lorem Ipsum</h3>
-          </div>
-          <div class="col d-flex center-center text-center">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
-          </div>
-        </div>
-        <div class="col d-flex flex-column">
-          <div class="col d-flex center-center">
-            <h3>Lorem Ipsum</h3>
-          </div>
-          <div class="col d-flex center-center text-center">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
-          </div>
-        </div>
-        <div class="col d-flex flex-column">
-          <div class="col d-flex center-center">
-            <h3>Lorem Ipsum</h3>
-          </div>
-          <div class="col d-flex center-center text-center">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
-          </div>
-        </div>
+    <!-- <div class="container-fluid">
+      <div class="row h8">
 
+      </div>
+    </div> -->
+    <div class="container">
+      <div id="picNexp-1" class="row h6 d-flex flex-md-row flex-column">
+        <div class="col d-flex center-center">
+          <figure class="figure">
+            <img src="./assets/illustrations/fan-alt.png" class="figure-img pic-img img-fluid rounded">
+          </figure>
+        </div>
+        <div class="col d-flex center-center text-center">
+          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet harum culpa inventore rem blanditiis excepturi autem. Aliquid ducimus, numquam molestias dolores officia nihil incidunt tempore iusto consectetur rem temporibus.</span>
+        </div>
+      </div>
+      <div id="picNexp-2" class="row h6 d-flex flex-md-row flex-column-reverse">
+        <div class="col d-flex center-center text-center">
+          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet harum culpa inventore rem blanditiis excepturi autem. Aliquid ducimus, numquam molestias dolores officia nihil incidunt tempore iusto consectetur rem temporibus.</span>
+        </div>
+        <div class="col d-flex center-center">
+          <figure class="figure">
+            <img src="./assets/illustrations/sakura-branch-alt.png" class="figure-img pic-img img-fluid rounded">
+          </figure>
+        </div>
+      </div>
+      <div id="picNexp-3" class="row h6 d-flex flex-md-row flex-column">
+        <div class="col d-flex center-center">
+          <figure class="figure">
+            <img src="./assets/illustrations/torii-geisha-alt.png" class="figure-img pic-img img-fluid rounded">
+          </figure>
+        </div>
+        <div class="col d-flex center-center text-center">
+          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet harum culpa inventore rem blanditiis excepturi autem. Aliquid ducimus, numquam molestias dolores officia nihil incidunt tempore iusto consectetur rem temporibus.</span>
+        </div>
+      </div>
+      <div id="picsNtitles" class="row row-cols-md-3 row-cols-1 h8">
         <div class="col d-flex flex-column">
           <div class="col d-flex center-center">
-            <h3>Lorem Ipsum</h3>
+            <figure class="figure">
+              <img src="./assets/illustrations/tsunami.png" class="figure-img icon-img rounded">
+            </figure>
           </div>
           <div class="col d-flex center-center text-center">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
@@ -67,7 +57,9 @@
         </div>
         <div class="col d-flex flex-column">
           <div class="col d-flex center-center">
-            <h3>Lorem Ipsum</h3>
+            <figure class="figure">
+              <img src="./assets/illustrations/samurai.png" class="figure-img icon-img rounded">
+            </figure>
           </div>
           <div class="col d-flex center-center text-center">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
@@ -75,7 +67,39 @@
         </div>
         <div class="col d-flex flex-column">
           <div class="col d-flex center-center">
-            <h3>Lorem Ipsum</h3>
+            <figure class="figure">
+              <img src="./assets/illustrations/geisha.png" class="figure-img icon-img rounded">
+            </figure>
+          </div>
+          <div class="col d-flex center-center text-center">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
+          </div>
+        </div>
+        <div class="col d-flex flex-column">
+          <div class="col d-flex center-center">
+            <figure class="figure">
+              <img src="./assets/illustrations/sagi.png" class="figure-img icon-img rounded">
+            </figure>
+          </div>
+          <div class="col d-flex center-center text-center">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
+          </div>
+        </div>
+        <div class="col d-flex flex-column">
+          <div class="col d-flex center-center">
+            <figure class="figure">
+              <img src="./assets/illustrations/origami.png" class="figure-img icon-img rounded">
+            </figure>
+          </div>
+          <div class="col d-flex center-center text-center">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
+          </div>
+        </div>
+        <div class="col d-flex flex-column">
+          <div class="col d-flex center-center">
+            <figure class="figure">
+              <img src="./assets/illustrations/kabuto.png" class="figure-img icon-img rounded">
+            </figure>
           </div>
           <div class="col d-flex center-center text-center">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</span>
@@ -85,20 +109,24 @@
     </div>
 
     <div class="d-flex flex-column justify-content-center h8">
-      <div id="cell" class="row d-flex h6 mb-0">
-        <div id="cellPic" class="col-5 border"></div>
+      <div id="cell" class="row h6 d-flex flex-md-row flex-column mb-0">
+        <div id="cellPic" class="col-md-5 d-flex justify-content-center align-items-end border">
+          <figure class="figure">
+            <img src="./assets/phone-pic.png" class="figure-img img-fluid rounded">
+          </figure>
+        </div>
         <div class="col d-flex flex-column justify-content-center">
-          <div id="cellExp-1">
+          <div id="cellExp-1" class="my-4">
             <h3 class="text-white">
-              Lorem
+              Lorem Ipsum
             </h3>
             <span>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ea cupiditate nam. Commodi corrupti necessitatibus vel aliquam officiis animi quas, accusamus expedita eos sit magnam nobis fugit ea, itaque blanditiis.
             </span>
           </div>
-          <div id="cellExp-2">
+          <div id="cellExp-2" class="my-2">
             <h3 class="text-white">
-              Lorem
+              Dolor Sit
             </h3>
             <span>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ea cupiditate nam. Commodi corrupti necessitatibus vel aliquam officiis animi quas, accusamus expedita eos sit magnam nobis fugit ea, itaque blanditiis.
@@ -115,13 +143,14 @@
             <h3>Lorem Ipsum</h3>
             <ul>
               <li>
-                Lorem
+                <a href="">
+                  Lorem
+                </a>
               </li>
               <li>
-                Lorem
-              </li>
-              <li>
-                Lorem
+                <a href="">
+                  Ipsum
+                </a>
               </li>
             </ul>
           </div>
@@ -154,9 +183,7 @@
             </ul>
           </div>
         </div>
-        
       </div>
-
     </div>
   </div>
 </template>
@@ -166,6 +193,8 @@ import { gsap } from "gsap";
 
 let animations = {
   zero: {opacity: 1, y: 0, x: 0},
+  appear: {duration: 4, opacity: 0},
+  inflate: {duration: 1, height: 1.2},
   fromUp: {duration: 2, opacity: 0, y: -100},
   fromDown: {duration: 2, opacity: 0, y: 100},
   fromLeft: {duration: 2, opacity: 0, x: -100},
@@ -177,15 +206,14 @@ export default {
     return {
       scrollPoint: 0,
       checkpoints: [
-        {check: false, point: 0, id:'#title', animation: animations.fromUp},
-        {check: false, point: 300, id:'#picNexp-1', animation: animations.fromRight},
-        {check: false, point: 500, id:'#picNexp-2', animation: animations.fromLeft},
-        {check: false, point: 800, id:'#picNexp-3', animation: animations.fromRight},
-        {check: false, point: 1400, id:'#picsNtitles', animation: animations.fromDown},
-        {check: false, point: 1800, id:'#cellPic', animation: animations.fromLeft},
-        {check: false, point: 1800, id:'#cellExp-1', animation: animations.fromRight},
-        {check: false, point: 1800, id:'#cellExp-2', animation: animations.fromRight},
-    ]
+        {check: false, point: 400, id:'#picNexp-1', animation: animations.fromRight},
+        {check: false, point: 600, id:'#picNexp-2', animation: animations.fromLeft},
+        {check: false, point: 900, id:'#picNexp-3', animation: animations.fromRight},
+        {check: false, point: 1500, id:'#picsNtitles', animation: animations.fromDown},
+        {check: false, point: 1900, id:'#cellPic', animation: animations.fromLeft},
+        {check: false, point: 1900, id:'#cellExp-1', animation: animations.fromRight},
+        {check: false, point: 1900, id:'#cellExp-2', animation: animations.fromRight},
+      ]
     }
   },
   mounted(){
@@ -193,6 +221,9 @@ export default {
     this.checkpoints.forEach(function (point) {
       gsap.set(point.id, point.animation)
     })
+    gsap.from('#title', animations.fromUp)
+    gsap.from('#cover-torii', animations.appear)
+    gsap.from('#cover-sun', animations.fromDown)
   },
   methods: {
     handleScroll(){
@@ -208,22 +239,63 @@ export default {
 </script>
 
 <style>
-:root {
-  --red: rgba(255, 32, 32, 0.856);
+html{
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: code-bold;
+  src: url('assets/code-bold.otf');
+}
+
+@font-face {
+  font-family: lg-cafe;
+  src: url('assets/lg-cafe.ttf');
+}
+
+#cover-torii, #cover-sun{
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#cover-torii{
+  top: 50%;
+  left: 50%;
+  height: 80%;
+}
+
+#cover-sun{
+  left: 65%;
+  top: 25%;
+  height: 30%;
+}
+
+.icon-img{
+  width: 80%;
 }
 
 h1, h2, h3 {
-  color: var(--red);
+  color: rgba(255, 73, 17, 0.856);
+  font-family: code-bold;
+  letter-spacing: 4px;
+}
+span{
+  font-family: lg-cafe;
+  font-size: 20px;
 }
 
 #body{
   color: white;
-  background-color: #292929;
+  background: url('assets/pattern.png');
 }
 
-#capa{
+#cover{
   color: gray;
-  border-bottom: solid 1px;
+  background: url('assets/cover-pattern.png');
+  background-color: white;
+  background-size: 75px;
+  height: 90vh;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 #bottom{
@@ -232,7 +304,11 @@ h1, h2, h3 {
 }
 
 #cell{
-  background-color: var(--red);
+  background: url('assets/cell-pattern.png');
+}
+
+.pic-img{
+  height: 300px;
 }
 
 .center-center{
@@ -241,15 +317,11 @@ h1, h2, h3 {
 }
 
 .h4, .h6, .h8, .h10{
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 .container-fluid{
   padding: 0px;
-}
-
-.h4{
-  height: 40vh;
 }
 
 .h6{
@@ -262,6 +334,16 @@ h1, h2, h3 {
 
 .h10{
   height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  #cover-torii{
+    height: auto;
+    width: 80%;
+  }
+  .h4, .h6, .h8, .h10 {
+    height: auto;
+  }
 }
 
 </style>
