@@ -1,18 +1,13 @@
 <template>
   <div id="body" class="container-fluid">
-    <div id="cover" class="d-flex center-center" >
+    <div id="cover" class="d-flex center-center">
       <img id="cover-sun" src="./assets/illustrations/sun.png">
       <img id="cover-torii" src="./assets/illustrations/cover-torii.png">
-      <div id="title" class="d-flex flex-column align-items-center">
+      <div id="title" class="d-flex flex-column align-items-center p-2">
         <h1>Lorem Ipsum Sit Amet</h1>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad voluptatibus nostrum.</span>
       </div>
     </div>
-    <!-- <div class="container-fluid">
-      <div class="row h8">
-
-      </div>
-    </div> -->
     <div class="container">
       <div id="picNexp-1" class="row h6 d-flex flex-md-row flex-column">
         <div class="col d-flex center-center">
@@ -109,14 +104,14 @@
     </div>
 
     <div class="d-flex flex-column justify-content-center h8">
-      <div id="cell" class="row h6 d-flex flex-md-row flex-column mb-0">
-        <div id="cellPic" class="col-md-5 d-flex justify-content-center align-items-end border">
-          <figure class="border">
-            <img src="./assets/phone-pic.png" class="figure-img img-fluid rounded">
+      <div id="photo" class="row h6 d-flex flex-md-row flex-column mb-0 mr-0">
+        <div id="photoPic" class="col-md-5 d-flex justify-content-center align-items-end">
+          <figure class="m-0" style="height: 100%" >
+            <img src="./assets/photo-pic.png" class="figure-img img-fluid" style="height: 100%">
           </figure>
         </div>
         <div class="col d-flex flex-column justify-content-center">
-          <div id="cellExp-1" class="my-4">
+          <div id="photoExp-1" class="my-4 px-4">
             <h3 class="text-white">
               Lorem Ipsum
             </h3>
@@ -124,7 +119,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ea cupiditate nam. Commodi corrupti necessitatibus vel aliquam officiis animi quas, accusamus expedita eos sit magnam nobis fugit ea, itaque blanditiis.
             </span>
           </div>
-          <div id="cellExp-2" class="my-2">
+          <div id="photoExp-2" class="my-2 px-4">
             <h3 class="text-white">
               Dolor Sit
             </h3>
@@ -154,34 +149,7 @@
               </li>
             </ul>
           </div>
-          <div class="col">
-            <h3>Lorem Ipsum</h3>
-            <ul>
-              <li>
-                Lorem
-              </li>
-              <li>
-                Lorem
-              </li>
-              <li>
-                Lorem
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Lorem Ipsum</h3>
-            <ul>
-              <li>
-                Lorem
-              </li>
-              <li>
-                Lorem
-              </li>
-              <li>
-                Lorem
-              </li>
-            </ul>
-          </div>
+          <div class="col-md-8 col"></div>
         </div>
       </div>
     </div>
@@ -210,9 +178,9 @@ export default {
         {check: false, point: 600, id:'#picNexp-2', animation: animations.fromLeft},
         {check: false, point: 900, id:'#picNexp-3', animation: animations.fromRight},
         {check: false, point: 1500, id:'#picsNtitles', animation: animations.fromDown},
-        {check: false, point: 1900, id:'#cellPic', animation: animations.fromLeft},
-        {check: false, point: 1900, id:'#cellExp-1', animation: animations.fromRight},
-        {check: false, point: 1900, id:'#cellExp-2', animation: animations.fromRight},
+        {check: false, point: 1900, id:'#photoPic', animation: animations.fromLeft},
+        {check: false, point: 1900, id:'#photoExp-1', animation: animations.fromRight},
+        {check: false, point: 1900, id:'#photoExp-2', animation: animations.fromRight},
       ]
     }
   },
@@ -241,6 +209,7 @@ export default {
 <style>
 html{
   overflow-x: hidden;
+  width: 100%;
 }
 @font-face {
   font-family: code-bold;
@@ -296,6 +265,7 @@ span{
   height: 90vh;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
+  margin-bottom: 10vh;
 }
 
 #bottom{
@@ -303,12 +273,12 @@ span{
   margin-bottom: 0px;
 }
 
-#cell{
-  background: url('assets/cell-pattern.png');
+#photo{
+  background: url('assets/photo-pattern.png');
 }
 
 .pic-img{
-  height: 300px;
+  height: 250px;
 }
 
 .center-center{
@@ -343,6 +313,22 @@ span{
   }
   .h4, .h6, .h8, .h10 {
     height: auto;
+  }
+  .pic-img{
+    height: 100px;
+  }
+  #cover-torii{
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 80%;
+  }
+
+  #cover-sun{
+    left: 50%;
+    top: 10%;
+    height: auto;
+    width: 50%;
   }
 }
 
