@@ -134,7 +134,7 @@
     <div id="bottom" class="container-fluid d-flex center-center h6">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-md-3">
             <h3>Lorem Ipsum</h3>
             <ul>
               <li>
@@ -149,6 +149,22 @@
               </li>
             </ul>
           </div>
+          <div class="col-md-3">
+            <h3>Lorem Ipsum</h3>
+            <ul>
+              <li>
+                <a href="">
+                  Lorem
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Ipsum
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md"></div>
           <div class="col-md-8 col"></div>
         </div>
       </div>
@@ -307,9 +323,15 @@ span{
 }
 
 @media only screen and (max-width: 600px) {
+  #title{
+    text-align: center;
+  }
   #cover-torii{
     height: auto;
     width: 80%;
+  }
+  #bottom{
+    height: 40vh;
   }
   .h4, .h6, .h8, .h10 {
     height: auto;
